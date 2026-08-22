@@ -3,12 +3,11 @@ This file will be responsible for creating config.koushin
 
 """
 import configparser
-import os
 from pathlib import Path
 
 import requests
 
-from logger_config import setup_logger
+from koushin.logger_config import setup_logger
 
 logger = setup_logger(name=__name__)
 
