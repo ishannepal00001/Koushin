@@ -2,10 +2,12 @@
 This file will be responsible for creating config.koushin 
 
 """
-from pathlib import Path
 import configparser
+import os
+from pathlib import Path
+
 import requests
-import os 
+
 from logger_config import setup_logger
 
 logger = setup_logger(name=__name__)
@@ -157,20 +159,4 @@ def generate_clean_path(path:str,project_name)->str:
     """
     logger.info("generating clean path ")
     return str(path).replace(f"/{project_name}","")
-
-def cretate_logger_file():
-    """
-
-        This fucntion will create a LOG directory in which logs for koushin will be 
-        stored there ! make sure to add LOG dir in .gitignore
-        
-        Returns:
-
-        Log path 
-
-    """
-    path = Path.cwd()
-    log_path = path /"LOG"
-    os.makedirs(log_path,exist_ok=True)
-    return log_path
 
