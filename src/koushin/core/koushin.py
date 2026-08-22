@@ -13,7 +13,7 @@ from pathlib import Path
 import requests
 from koushin.config.config import conversion, get_config, read_config
 
-from logger_config import setup_logger
+from koushin.logger_config import setup_logger
 
 logger = setup_logger(__name__)
 
