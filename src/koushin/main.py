@@ -1,7 +1,7 @@
 import argparse
 
-from config import config
-from config import github
+from koushin.config import config
+from koushin.config import github
 from koushin import logger_config
 
 logger = logger_config.setup_logger(name=__name__)
