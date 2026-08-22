@@ -1,6 +1,6 @@
 import pathlib
 import os
-from logger_config import setup_logger
+from koushin.logger_config import setup_logger
 import time
 
 start = time.perf_counter()
