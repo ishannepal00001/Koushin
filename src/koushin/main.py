@@ -1,6 +1,6 @@
 import argparse
 
-from config.config import create_config
+from config import config
 from config import github
 from koushin import logger_config
 
@@ -29,7 +29,7 @@ def main():
         )
 
         try:
-            create_config(
+            config.create_config(
                 project_name=project_name, project_path=project_path, github=github_url
             )
             print("Created config")
