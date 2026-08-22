@@ -4,13 +4,15 @@ check current version , and update
 
 """
 
-from koushin.config.config import (
-    read_config, get_config,
-    conversion
-)
-import requests , zipfile,io,shutil
-from pathlib import Path
+import io
+import shutil
 import subprocess
+import zipfile
+from pathlib import Path
+
+import requests
+from koushin.config.config import conversion, get_config, read_config
+
 from logger_config import setup_logger
 
 logger = setup_logger(__name__)
