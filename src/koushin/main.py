@@ -1,5 +1,7 @@
 import argparse
-from koushin.config.config import create_config
+
+from config.config import create_config
+
 
 def main():
     parser = argparse.ArgumentParser(prog="koushin")
