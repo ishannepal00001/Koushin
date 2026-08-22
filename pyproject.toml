@@ -1,6 +1,6 @@
 [project]
 name = "koushin"
-version = "1.2.7"
+version = "1.2.8"
 description = "A simple version manager"
 readme = "README.md"
 requires-python = ">=3.10"
