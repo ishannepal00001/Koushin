@@ -5,6 +5,10 @@ import asyncio
 
 
 async def main():
+    """Entry point for the Koushin application.
+
+    Runs the main async loop and prints a greeting message.
+    """
     print("Hello from Koushin.main")
 
 

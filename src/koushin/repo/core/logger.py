@@ -1,3 +1,7 @@
+"""Logging configuration for the Koushin application.
+
+Sets up file-based logging with timestamp, level, and message format.
+"""
 import logging
 
 logging.basicConfig(
